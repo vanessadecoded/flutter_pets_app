@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter_pets_app/pages/login_page.dart';
+import 'package:flutter_pets_app/pages/register_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -70,7 +71,12 @@ class WelcomePage extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 25, right: 25, bottom: 20),
                 child: FloatingActionButton(
                   onPressed: () { 
-                    
+                    Navigator.push (
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => LoginPage()
+                        ),
+                    );
                   },
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50)
@@ -94,10 +100,10 @@ class WelcomePage extends StatelessWidget {
                   splashColor: Color.fromARGB(255, 240, 88, 0).withOpacity(0.2),
                   highlightColor: Color.fromARGB(255, 240, 88, 0).withOpacity(0.2),
                   onTap: () {
-                    Navigator.push(
+                    Navigator.push (
                       context, 
                       MaterialPageRoute(
-                        builder: (context) => LoginPage(),
+                        builder: (context) => RegisterPage()
                         ),
                     );
                   },
