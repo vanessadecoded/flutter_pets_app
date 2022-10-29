@@ -146,7 +146,6 @@ class LoginPage extends StatelessWidget {
                 ),
 
                 //not a member?
-                //SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
