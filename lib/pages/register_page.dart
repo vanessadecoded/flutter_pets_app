@@ -15,8 +15,8 @@ class RegisterPage extends StatelessWidget {
        children: [
         Positioned.fill(
           child: Opacity(
-            opacity: 0.3,
-          child: Image.asset('assets/images/login.jpg',
+            opacity: 0.6,
+          child: Image.asset('assets/images/register.jpg',
           fit: BoxFit.cover),
           ),
           ),
