@@ -21,150 +21,173 @@ class LoginPage extends StatelessWidget {
           ),
           ),
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-               Center( 
-                child: Padding(
-                 padding: const EdgeInsets.all(15),
-                 child: Container(
-                 decoration: BoxDecoration(
-                 shape: BoxShape.circle, 
-                 color: Colors.transparent,
-                 border: Border.all(
-                 color: Color.fromARGB(255, 240, 88, 0),
-                 width: 3,
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              reverse: true,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                 Center( 
+                  child: Padding(
+                   padding: const EdgeInsets.all(15),
+                   child: Container(
+                   decoration: BoxDecoration(
+                   shape: BoxShape.circle, 
+                   color: Colors.transparent,
+                   border: Border.all(
+                   color: Color.fromARGB(255, 240, 88, 0),
+                   width: 3,
+                  ),
+              ),
+               width: 150,
+               height: 150,
+              child: Center(
+                child: Text(
+                  "SIGN IN.",
+                  style: GoogleFonts.quicksand(
+                    color: Color.fromARGB(255, 240, 88, 0),
+                    fontSize: 35,
+                   ),
+                 ) ),
+                      ),
+                      ), ),
+                      
+                      SizedBox(height: 30),
+                      Text('To The',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.quicksand(
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
                 ),
-            ),
-             width: 150,
-             height: 150,
-            child: Center(
-              child: Text(
-                "SIGN IN.",
-                style: GoogleFonts.quicksand(
-                  color: Color.fromARGB(255, 240, 88, 0),
-                  fontSize: 35,
-                 ),
-               ) ),
-          ),
-          ), ),
-          
-          SizedBox(height: 30),
-          Text('To The',
+                Text('Fur.mily',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.quicksand(
                   color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
-              Text('Fur.mily',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.quicksand(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold
-              )
-              ),
-          
-          //email textfield
-          SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.transparent,
-                border: Border.all(
-                  color: Color.fromARGB(255, 240, 88, 0),
-                  width: 3,
-                  ),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(left:20),
-                child: TextField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Email',
-                    hintStyle: GoogleFonts.quicksand(
-                      color: Colors.white
-                    )
-                    ),
-                ),
-                ),
-             ),
-            ),
-
-            //password textfield
-          SizedBox(height: 10),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.transparent,
-                border: Border.all(
-                  color: Color.fromARGB(255, 240, 88, 0),
-                  width: 3,
-                  ),
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(left:20),
-                child: TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Password',
-                    hintStyle: GoogleFonts.quicksand(
-                      color: Colors.white
-                    )
-                    ),
-                ),
-                ),
-             ),
-            ),
-
-            //sign in button
-            SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.only(left: 27, right: 27, bottom: 20),
-                child: FloatingActionButton(
-                  onPressed: () { 
-                    
-                  },
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50)
-                  ),
-                  backgroundColor: Color.fromARGB(255, 240, 88, 0),
-                   child: Text('Sign In',
-                  style: GoogleFonts.quicksand(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold
-                    ), ),
-                  ),
-                ),
-
-                //not a member?
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('Not a member?',
-                   style: GoogleFonts.quicksand(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                   ),
-                    ),
-                    Text(' Register now',
-                    style: GoogleFonts.quicksand(
-                      color: Color.fromARGB(255, 240, 88, 0),
-                      fontWeight: FontWeight.bold,
-                    ),
-                    )
-                  ],
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold
                 )
-          ]
-          ),)
+                ),
+                      
+                      //email textfield
+                      SizedBox(height: 20),
+                      Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  border: Border.all(
+                    color: Color.fromARGB(255, 240, 88, 0),
+                    width: 3,
+                    ),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left:20),
+                  child: TextField(
+                    style: GoogleFonts.quicksand( 
+                      color: Colors.white
+                    ),
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Email',
+                      hintStyle: GoogleFonts.quicksand(
+                        color: Colors.white
+                      )
+                      ),
+                  ),
+                  ),
+               ),
+              ),
+            
+              //password textfield
+                      SizedBox(height: 10),
+                      Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  border: Border.all(
+                    color: Color.fromARGB(255, 240, 88, 0),
+                    width: 3,
+                    ),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left:20),
+                  child: TextField(
+                    style: GoogleFonts.quicksand( 
+                      color: Colors.white
+                    ),
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Password',
+                      hintStyle: GoogleFonts.quicksand(
+                        color: Colors.white
+                      )
+                      ),
+                  ),
+                  ),
+               ),
+              ),
+            
+               //forgot password
+                     SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.only(left:45),
+                      child: Text('Forgot password?',
+                  textAlign: TextAlign.left,
+                  style: GoogleFonts.quicksand(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                  ),
+                ),
+                    ),
+            
+              //sign in button
+              SizedBox(height: 15),
+                Padding(
+                  padding: const EdgeInsets.only(left: 27, right: 27, bottom: 20),
+                  child: FloatingActionButton(
+                    onPressed: () { 
+                      
+                    },
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50)
+                    ),
+                    backgroundColor: Color.fromARGB(255, 240, 88, 0),
+                     child: Text('Sign In',
+                    style: GoogleFonts.quicksand(
+                      color: Colors.white,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold
+                      ), ),
+                    ),
+                  ),
+            
+                  //not a member?
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Not a member?',
+                     style: GoogleFonts.quicksand(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                     ),
+                      ),
+                      Text(' Register now',
+                      style: GoogleFonts.quicksand(
+                        color: Color.fromARGB(255, 240, 88, 0),
+                        fontWeight: FontWeight.bold,
+                      ),
+                      )
+                    ],
+                  )
+                      ]
+                      ),
+            ),)
           ],),
           ),
           );
