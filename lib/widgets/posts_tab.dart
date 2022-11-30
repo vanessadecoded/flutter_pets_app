@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-class SecondTab extends StatelessWidget{
+class FirstTab extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
@@ -12,9 +12,9 @@ class SecondTab extends StatelessWidget{
       SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemBuilder: (context, index) {
         return Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.all(1.0),
           child: Container(
-            color: Colors.grey),
+            color: Color.fromARGB(255, 226, 226, 226)),
         );
       });
     
