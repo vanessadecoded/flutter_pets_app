@@ -5,14 +5,15 @@
 //import 'package:flutter_pets_app/pages/welcome_page.dart';
 //import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_app/pages/proprofile_page.dart';
+import 'package:flutter_pets_app/pages/lost_page.dart';
+//import 'package:flutter_pets_app/pages/proprofile_page.dart';
 //import 'package:flutter_pets_app/pages/visitorprofile_page.dart';
 
 void main() {
   runApp(MaterialApp(
     theme: ThemeData( fontFamily: 'Quicksand'),
     debugShowCheckedModeBanner: false,
-    home: ProProfilePage(), //SplashPage(duration: 3, goToPage: WelcomePage()),
+    home: LostPage(),//ProProfilePage(), //SplashPage(duration: 3, goToPage: WelcomePage()),
   ));
 }
 
