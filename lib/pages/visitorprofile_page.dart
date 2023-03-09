@@ -1,9 +1,8 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, duplicate_ignore, prefer_const_literals_to_create_immutables, sort_child_properties_last
-
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_app/widgets/Posts_tab.dart';
+import 'package:flutter_pets_app/widgets/posts_tab.dart';
+import 'package:flutter_pets_app/widgets/pets_tab.dart';
 import 'package:flutter_pets_app/widgets/likes_tab.dart';
-import 'package:flutter_pets_app/widgets/saved_tab.dart';
 
 
 class VisitorProfile extends StatelessWidget {
@@ -205,10 +204,10 @@ class VisitorProfile extends StatelessWidget {
                       icon: Icon(Icons.apps, color: Colors.black),
                     ),
                     Tab(
-                      icon: Icon(Icons.favorite_border_rounded, color: Colors.black),
+                      icon: Icon(Icons.pets, color: Colors.black),
                     ),
                     Tab(
-                      icon: Icon(Icons.bookmark_border, color: Colors.black),
+                      icon: Icon(Icons.favorite_border_rounded, color: Colors.black),
                     ),
                   ]
                  ),

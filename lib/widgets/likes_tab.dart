@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-class SecondTab extends StatelessWidget{
+class ThirdTab extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
